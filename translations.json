@@ -1,0 +1,42 @@
+[
+  {
+    "original": "The dog barks)",
+    "confidence": 0.9620417356491089,
+    "translated": "(The dog barks)"
+  },
+  {
+    "original": "The dog barks",
+    "confidence": 0.9746180772781372,
+    "translated": "The dog barks."
+  },
+  {
+    "original": "92% Great",
+    "confidence": 0.9792430400848389,
+    "translated": "92% – Great"
+  },
+  {
+    "original": "The dog barks",
+    "confidence": 0.9585130214691162,
+    "translated": "The dog barks."
+  },
+  {
+    "original": "You said)",
+    "confidence": 0.9781729578971863,
+    "translated": "You said…)"
+  },
+  {
+    "original": "The dog",
+    "confidence": 0.9639124274253845,
+    "translated": "The dog"
+  },
+  {
+    "original": "barks",
+    "confidence": 0.9993594288825989,
+    "translated": "barks"
+  },
+  {
+    "original": "Correct)",
+    "confidence": 0.9437757730484009,
+    "translated": "(Correct)"
+  }
+]

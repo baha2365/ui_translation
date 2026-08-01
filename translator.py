@@ -4,12 +4,12 @@ OCR + Translation pipeline
 2) Tencent Hunyuan-MT-7B — translates the detected text into English
 
 pip install paddleocr paddlepaddle
-pip install "transformers>=4.56.0" torch accelerate
+pip install "transformers>=4.56.0" torch accelerate bitsandbytes
 """
 
 import torch
 from paddleocr import PaddleOCR
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
 
 # ---------------------------------------------------------------------------
@@ -53,18 +53,38 @@ _tokenizer = None
 _model = None
 
 
+# Set to False only if you have a GPU with ~16GB+ free VRAM.
+# On smaller cards (8-12GB), 4-bit quantization keeps the whole model on GPU
+# instead of letting accelerate silently offload layers to disk (which is
+# what caused the "Some parameters are on the meta device..." slowdown).
+USE_4BIT = True
+
+
 def load_translation_model():
-    """Loads the tokenizer/model once and caches them (7B params — needs a GPU
-    with ~16GB VRAM in bf16; will run on CPU too, just much slower)."""
+    """Loads the tokenizer/model once and caches them."""
     global _tokenizer, _model
     if _model is None:
         print("Loading Hunyuan-MT-7B (first run may take a while)...")
         _tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-        _model = AutoModelForCausalLM.from_pretrained(
-            MODEL_NAME,
-            device_map="auto",
-            torch_dtype=torch.bfloat16,
-        )
+
+        if USE_4BIT:
+            quant_config = BitsAndBytesConfig(
+                load_in_4bit=True,
+                bnb_4bit_compute_dtype=torch.bfloat16,
+                bnb_4bit_quant_type="nf4",
+                bnb_4bit_use_double_quant=True,
+            )
+            _model = AutoModelForCausalLM.from_pretrained(
+                MODEL_NAME,
+                device_map="auto",
+                quantization_config=quant_config,
+            )
+        else:
+            _model = AutoModelForCausalLM.from_pretrained(
+                MODEL_NAME,
+                device_map="auto",
+                dtype=torch.bfloat16,
+            )
         _model.eval()
     return _tokenizer, _model
 
@@ -82,16 +102,17 @@ def translate_text(text: str, target_language: str = "English") -> str:
     )
     messages = [{"role": "user", "content": prompt}]
 
-    tokenized_chat = tokenizer.apply_chat_template(
+    model_inputs = tokenizer.apply_chat_template(
         messages,
         tokenize=True,
         add_generation_prompt=True,
         return_tensors="pt",
+        return_dict=True,   # gives back input_ids + attention_mask together
     ).to(model.device)
 
     with torch.no_grad():
         output_ids = model.generate(
-            tokenized_chat,
+            **model_inputs,   # unpack, don't pass the dict object directly
             max_new_tokens=512,
             do_sample=True,
             top_k=20,
@@ -101,7 +122,8 @@ def translate_text(text: str, target_language: str = "English") -> str:
         )
 
     # Strip the prompt tokens, keep only what was generated
-    generated = output_ids[0][tokenized_chat.shape[-1]:]
+    input_len = model_inputs["input_ids"].shape[-1]
+    generated = output_ids[0][input_len:]
     return tokenizer.decode(generated, skip_special_tokens=True).strip()
 
 
