@@ -1,13 +1,13 @@
 """
 Stage 2 — Translation only (Hunyuan-MT-7B).
 
-Run this AFTER ocr_step.py, as a separate process. PaddlePaddle is never
+Run this AFTER ocr.py, as a separate process. PaddlePaddle is never
 imported here, so the whole GPU is available for the model.
 
 pip install "transformers>=4.56.0" torch accelerate bitsandbytes
 
 Usage:
-    python translate_step.py
+    python translate.py
 """
 
 import json
@@ -88,14 +88,17 @@ def translate_text(text: str, target_language: str = "English") -> str:
     return tokenizer.decode(generated, skip_special_tokens=True).strip()
 
 
-def translate_all(detected_texts, target_language: str = "English") -> list[dict]:
+def translate_all(detected_texts: list[dict], target_language: str = "English") -> list[dict]:
+    """detected_texts items look like: {"text": ..., "confidence": ..., "box": [...]}."""
     results = []
-    for text, score in detected_texts:
+    for item in detected_texts:
+        text = item.get("text", "")
         translated = translate_text(text, target_language=target_language)
         results.append({
             "original": text,
-            "confidence": score,
+            "confidence": item.get("confidence"),
             "translated": translated,
+            "box": item.get("box"),  # <-- carried through for overlay.py
         })
     return results
 
@@ -107,9 +110,11 @@ if __name__ == "__main__":
     print("\n--- АУДАРМА (Hunyuan-MT-7B) ---")
     translations = translate_all(detected, target_language="English")
     for item in translations:
-        print(f"[{item['confidence']:.2f}] {item['original']}  ->  {item['translated']}")
+        conf = item["confidence"] if item["confidence"] is not None else 0.0
+        print(f"[{conf:.2f}] {item['original']}  ->  {item['translated']}")
 
     with open("translations.json", "w", encoding="utf-8") as f:
         json.dump(translations, f, ensure_ascii=False, indent=2)
 
     print("\nSaved to translations.json")
+    print("Now run: python overlay.py")
