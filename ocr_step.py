@@ -16,7 +16,7 @@ import json
 from paddleocr import PaddleOCR
 
 
-def detect_texts(img_path: str, lang: str = "ru") -> list[tuple[str, float]]:
+def detect_texts(img_path: str, lang: str = "ch") -> list[tuple[str, float]]:
     """Runs PaddleOCR on an image and returns a list of (text, confidence)."""
     ocr = PaddleOCR(use_textline_orientation=True, lang=lang)
     results = ocr.predict(img_path)
@@ -44,10 +44,19 @@ def detect_texts(img_path: str, lang: str = "ru") -> list[tuple[str, float]]:
 
 
 if __name__ == "__main__":
+    # IMPORTANT: `lang` must match the script/language actually in the image —
+    # PaddleOCR loads a different recognition model per language, and each one
+    # only knows its own character set:
+    #   "ch"  -> Simplified/Traditional Chinese + Pinyin + English + Japanese
+    #   "ru"  -> Russian/Belarusian/Ukrainian (Cyrillic) + Latin
+    #   "en"  -> English only
+    # Using the wrong one won't error — it'll just silently skip characters
+    # outside its vocabulary (that's why Chinese text was dropped when lang="ru").
     img_path = "chinese_ui1.png"
+    lang = "ch"
 
     print("\n--- ТАБЫЛҒАН МӘТІНДЕР (OCR) ---")
-    detected = detect_texts(img_path, lang="ru")
+    detected = detect_texts(img_path, lang=lang)
     for text, score in detected:
         print(f"Мәтін: '{text}' | Сенімділік: {score:.2f}")
 
