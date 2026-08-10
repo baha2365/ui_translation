@@ -13,6 +13,7 @@ Usage:
 """
 
 import json
+from PIL import Image
 from paddleocr import PaddleOCR
 
 
@@ -96,13 +97,17 @@ if __name__ == "__main__":
     img_path = "chinese_ui1.png"
     lang = "ch"
 
+    with Image.open(img_path) as im:
+        image_size = list(im.size)  # [width, height] — for later size-mismatch checks
+
     print("\n--- ТАБЫЛҒАН МӘТІНДЕР (OCR) ---")
     detected = detect_texts(img_path, lang=lang)
     for item in detected:
         print(f"Мәтін: '{item['text']}' | Сенімділік: {item['confidence']:.2f} | Box: {item['box']}")
 
+    output = {"image_size": image_size, "items": detected}
     with open("detected_texts.json", "w", encoding="utf-8") as f:
-        json.dump(detected, f, ensure_ascii=False, indent=2)
+        json.dump(output, f, ensure_ascii=False, indent=2)
 
     print(f"\nSaved {len(detected)} lines (with coordinates) to detected_texts.json")
     print("Now run: python translate.py")
