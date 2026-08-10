@@ -2,226 +2,1036 @@
   {
     "original": "儿童疫苗",
     "confidence": 0.99847412109375,
-    "translated": "Childhood vaccines"
+    "translated": "Childhood vaccines",
+    "box": [
+      [
+        3.0,
+        19.0
+      ],
+      [
+        72.0,
+        25.0
+      ],
+      [
+        70.0,
+        47.0
+      ],
+      [
+        1.0,
+        41.0
+      ]
+    ]
   },
   {
     "original": "成人疫苗",
     "confidence": 0.9994765520095825,
-    "translated": "Vaccines for adults"
+    "translated": "Vaccines for adults",
+    "box": [
+      [
+        113.0,
+        29.0
+      ],
+      [
+        177.0,
+        29.0
+      ],
+      [
+        177.0,
+        50.0
+      ],
+      [
+        113.0,
+        50.0
+      ]
+    ]
   },
   {
     "original": "极速问诊",
     "confidence": 0.9998952150344849,
-    "translated": "Quick Consultation"
+    "translated": "Quick Consultation",
+    "box": [
+      [
+        221.0,
+        30.0
+      ],
+      [
+        283.0,
+        30.0
+      ],
+      [
+        283.0,
+        48.0
+      ],
+      [
+        221.0,
+        48.0
+      ]
+    ]
   },
   {
     "original": "找专家",
     "confidence": 0.9999713897705078,
-    "translated": "Find an expert."
+    "translated": "Find an expert.",
+    "box": [
+      [
+        331.0,
+        28.0
+      ],
+      [
+        382.0,
+        25.0
+      ],
+      [
+        383.0,
+        47.0
+      ],
+      [
+        332.0,
+        49.0
+      ]
+    ]
   },
   {
     "original": "1.",
     "confidence": 0.6967253684997559,
-    "translated": "1."
+    "translated": "1.",
+    "box": [
+      [
+        110.0,
+        74.0
+      ],
+      [
+        126.0,
+        74.0
+      ],
+      [
+        126.0,
+        87.0
+      ],
+      [
+        110.0,
+        87.0
+      ]
+    ]
   },
   {
     "original": "挂号就诊",
     "confidence": 0.9995776414871216,
-    "translated": "Making an appointment to see a doctor"
+    "translated": "Making an appointment to see a doctor",
+    "box": [
+      [
+        4.0,
+        92.0
+      ],
+      [
+        67.0,
+        94.0
+      ],
+      [
+        67.0,
+        115.0
+      ],
+      [
+        3.0,
+        112.0
+      ]
+    ]
   },
   {
     "original": "预约体",
     "confidence": 0.9998334050178528,
-    "translated": "Reservation Body"
+    "translated": "Reservation Body",
+    "box": [
+      [
+        87.0,
+        96.0
+      ],
+      [
+        139.0,
+        99.0
+      ],
+      [
+        138.0,
+        118.0
+      ],
+      [
+        86.0,
+        115.0
+      ]
+    ]
   },
   {
     "original": "医美服务",
     "confidence": 0.9999945759773254,
-    "translated": "Medical aesthetics services"
+    "translated": "Medical aesthetics services",
+    "box": [
+      [
+        249.0,
+        98.0
+      ],
+      [
+        309.0,
+        98.0
+      ],
+      [
+        309.0,
+        115.0
+      ],
+      [
+        249.0,
+        115.0
+      ]
+    ]
   },
   {
     "original": "X药房",
     "confidence": 0.7974810004234314,
-    "translated": "Pharmacy X"
+    "translated": "Pharmacy X",
+    "box": [
+      [
+        334.0,
+        96.0
+      ],
+      [
+        391.0,
+        96.0
+      ],
+      [
+        391.0,
+        116.0
+      ],
+      [
+        334.0,
+        116.0
+      ]
+    ]
   },
   {
     "original": "甄选宝宝睡袋",
     "confidence": 0.9995298385620117,
-    "translated": "Choosing a baby sleeping bag"
+    "translated": "Choosing a baby sleeping bag",
+    "box": [
+      [
+        9.0,
+        157.0
+      ],
+      [
+        142.0,
+        162.0
+      ],
+      [
+        141.0,
+        189.0
+      ],
+      [
+        8.0,
+        184.0
+      ]
+    ]
   },
   {
     "original": "轻软透",
     "confidence": 0.8832561373710632,
-    "translated": "Soft and breathable"
+    "translated": "Soft and breathable",
+    "box": [
+      [
+        10.0,
+        189.0
+      ],
+      [
+        64.0,
+        189.0
+      ],
+      [
+        64.0,
+        210.0
+      ],
+      [
+        10.0,
+        210.0
+      ]
+    ]
   },
   {
     "original": "欢迎使用医鹿",
     "confidence": 0.9999525547027588,
-    "translated": "Welcome to Yilu (Med Deer)."
+    "translated": "Welcome to Yilu (Med Deer).",
+    "box": [
+      [
+        150.0,
+        189.0
+      ],
+      [
+        247.0,
+        189.0
+      ],
+      [
+        247.0,
+        209.0
+      ],
+      [
+        150.0,
+        209.0
+      ]
+    ]
   },
   {
     "original": "厦",
     "confidence": 0.614584743976593,
-    "translated": "Xia"
+    "translated": "Xia",
+    "box": [
+      [
+        90.0,
+        215.0
+      ],
+      [
+        100.0,
+        225.0
+      ],
+      [
+        91.0,
+        234.0
+      ],
+      [
+        80.0,
+        224.0
+      ]
+    ]
   },
   {
     "original": "新人有礼",
     "confidence": 0.999976634979248,
-    "translated": "A courtesy for newcomers:"
+    "translated": "Newcomers, here’s a friendly reminder:",
+    "box": [
+      [
+        146.0,
+        226.0
+      ],
+      [
+        248.0,
+        224.0
+      ],
+      [
+        249.0,
+        255.0
+      ],
+      [
+        147.0,
+        257.0
+      ]
+    ]
   },
   {
     "original": "疫",
     "confidence": 0.9991961121559143,
-    "translated": "epidemic"
+    "translated": "epidemic",
+    "box": [
+      [
+        8.0,
+        250.0
+      ],
+      [
+        37.0,
+        252.0
+      ],
+      [
+        35.0,
+        278.0
+      ],
+      [
+        6.0,
+        276.0
+      ]
+    ]
   },
   {
     "original": "¥2",
     "confidence": 0.9888431429862976,
-    "translated": "¥2"
+    "translated": "¥2",
+    "box": [
+      [
+        73.0,
+        285.0
+      ],
+      [
+        104.0,
+        285.0
+      ],
+      [
+        104.0,
+        306.0
+      ],
+      [
+        73.0,
+        306.0
+      ]
+    ]
   },
   {
     "original": "满6元减2元",
     "confidence": 0.9995371699333191,
-    "translated": "Discount of 2 yuan when the amount reaches 6 yuan."
+    "translated": "Discount of 2 yuan when the amount reaches 6 yuan.",
+    "box": [
+      [
+        138.0,
+        279.0
+      ],
+      [
+        229.0,
+        279.0
+      ],
+      [
+        229.0,
+        296.0
+      ],
+      [
+        138.0,
+        296.0
+      ]
+    ]
   },
   {
     "original": "问诊",
     "confidence": 0.9999609589576721,
-    "translated": "Consultation"
+    "translated": "Consultation",
+    "box": [
+      [
+        71.0,
+        306.0
+      ],
+      [
+        106.0,
+        306.0
+      ],
+      [
+        106.0,
+        324.0
+      ],
+      [
+        71.0,
+        324.0
+      ]
+    ]
   },
   {
     "original": "所有问诊通用",
     "confidence": 0.999784529209137,
-    "translated": "Applicable to all consultations"
+    "translated": "Applicable to all consultations",
+    "box": [
+      [
+        137.0,
+        297.0
+      ],
+      [
+        210.0,
+        297.0
+      ],
+      [
+        210.0,
+        314.0
+      ],
+      [
+        137.0,
+        314.0
+      ]
+    ]
   },
   {
     "original": "有效期7天",
     "confidence": 0.9999843835830688,
-    "translated": "Valid for 7 days"
+    "translated": "Valid for 7 days",
+    "box": [
+      [
+        136.0,
+        314.0
+      ],
+      [
+        196.0,
+        314.0
+      ],
+      [
+        196.0,
+        330.0
+      ],
+      [
+        136.0,
+        330.0
+      ]
+    ]
   },
   {
     "original": "¥8",
     "confidence": 0.9900498986244202,
-    "translated": "¥8"
+    "translated": "¥8",
+    "box": [
+      [
+        72.0,
+        357.0
+      ],
+      [
+        105.0,
+        357.0
+      ],
+      [
+        105.0,
+        381.0
+      ],
+      [
+        72.0,
+        381.0
+      ]
+    ]
   },
   {
     "original": "满29元减8元",
     "confidence": 0.9997357726097107,
-    "translated": "Discount of 8 yuan when the amount reaches 29 yuan."
+    "translated": "Discount of 8 yuan when the amount reaches 29 yuan.",
+    "box": [
+      [
+        136.0,
+        351.0
+      ],
+      [
+        239.0,
+        351.0
+      ],
+      [
+        239.0,
+        371.0
+      ],
+      [
+        136.0,
+        371.0
+      ]
+    ]
   },
   {
     "original": "同",
     "confidence": 0.9995571970939636,
-    "translated": "Same"
+    "translated": "Same",
+    "box": [
+      [
+        11.0,
+        377.0
+      ],
+      [
+        41.0,
+        377.0
+      ],
+      [
+        41.0,
+        397.0
+      ],
+      [
+        11.0,
+        397.0
+      ]
+    ]
   },
   {
     "original": "问诊",
     "confidence": 0.9999377727508545,
-    "translated": "Consultation"
+    "translated": "Consultation",
+    "box": [
+      [
+        72.0,
+        379.0
+      ],
+      [
+        106.0,
+        379.0
+      ],
+      [
+        106.0,
+        398.0
+      ],
+      [
+        72.0,
+        398.0
+      ]
+    ]
   },
   {
     "original": "所有问诊通用",
     "confidence": 0.9980707168579102,
-    "translated": "Applicable to all consultations"
+    "translated": "Applicable to all consultations",
+    "box": [
+      [
+        138.0,
+        372.0
+      ],
+      [
+        209.0,
+        372.0
+      ],
+      [
+        209.0,
+        386.0
+      ],
+      [
+        138.0,
+        386.0
+      ]
+    ]
   },
   {
     "original": "有效期7天",
     "confidence": 0.9999849200248718,
-    "translated": "Valid for 7 days"
+    "translated": "Valid for 7 days",
+    "box": [
+      [
+        136.0,
+        387.0
+      ],
+      [
+        196.0,
+        387.0
+      ],
+      [
+        196.0,
+        404.0
+      ],
+      [
+        136.0,
+        404.0
+      ]
+    ]
   },
   {
     "original": "儿科",
     "confidence": 0.995980978012085,
-    "translated": "Pediatrics"
+    "translated": "Pediatrics",
+    "box": [
+      [
+        12.0,
+        400.0
+      ],
+      [
+        40.0,
+        400.0
+      ],
+      [
+        40.0,
+        417.0
+      ],
+      [
+        12.0,
+        417.0
+      ]
+    ]
   },
   {
     "original": "¥12",
     "confidence": 0.9880619645118713,
-    "translated": "¥12"
+    "translated": "¥12",
+    "box": [
+      [
+        66.0,
+        428.0
+      ],
+      [
+        111.0,
+        428.0
+      ],
+      [
+        111.0,
+        454.0
+      ],
+      [
+        66.0,
+        454.0
+      ]
+    ]
   },
   {
     "original": "满49元减12元",
     "confidence": 0.9998282194137573,
-    "translated": "Get a discount of 12 yuan when the total amount reaches 49 yuan."
+    "translated": "Get a discount of 12 yuan when you spend 49 yuan or more.",
+    "box": [
+      [
+        134.0,
+        424.0
+      ],
+      [
+        246.0,
+        424.0
+      ],
+      [
+        246.0,
+        444.0
+      ],
+      [
+        134.0,
+        444.0
+      ]
+    ]
   },
   {
     "original": "问诊",
     "confidence": 0.9999655485153198,
-    "translated": "Consultation"
+    "translated": "Consultation",
+    "box": [
+      [
+        70.0,
+        452.0
+      ],
+      [
+        105.0,
+        452.0
+      ],
+      [
+        105.0,
+        470.0
+      ],
+      [
+        70.0,
+        470.0
+      ]
+    ]
   },
   {
     "original": "所有问诊通用",
     "confidence": 0.9994910359382629,
-    "translated": "Applicable to all consultations"
+    "translated": "Applicable to all consultations",
+    "box": [
+      [
+        136.0,
+        444.0
+      ],
+      [
+        209.0,
+        444.0
+      ],
+      [
+        209.0,
+        460.0
+      ],
+      [
+        136.0,
+        460.0
+      ]
+    ]
   },
   {
     "original": "福",
     "confidence": 0.9999597072601318,
-    "translated": "Phu"
+    "translated": "Phu",
+    "box": [
+      [
+        9.0,
+        455.0
+      ],
+      [
+        38.0,
+        455.0
+      ],
+      [
+        38.0,
+        481.0
+      ],
+      [
+        9.0,
+        481.0
+      ]
+    ]
   },
   {
     "original": "有效期7天",
     "confidence": 0.9999736547470093,
-    "translated": "Valid for 7 days"
+    "translated": "Valid for 7 days",
+    "box": [
+      [
+        134.0,
+        460.0
+      ],
+      [
+        192.0,
+        460.0
+      ],
+      [
+        192.0,
+        477.0
+      ],
+      [
+        134.0,
+        477.0
+      ]
+    ]
   },
   {
     "original": "打卡",
     "confidence": 0.8754826188087463,
-    "translated": "Clock in"
+    "translated": "Clock in",
+    "box": [
+      [
+        356.0,
+        494.0
+      ],
+      [
+        380.0,
+        494.0
+      ],
+      [
+        380.0,
+        511.0
+      ],
+      [
+        356.0,
+        511.0
+      ]
+    ]
   },
   {
     "original": "一键领取",
     "confidence": 0.9999046325683594,
-    "translated": "Get it with just one click."
+    "translated": "Get it with just one click.",
+    "box": [
+      [
+        158.0,
+        513.0
+      ],
+      [
+        234.0,
+        513.0
+      ],
+      [
+        234.0,
+        535.0
+      ],
+      [
+        158.0,
+        535.0
+      ]
+    ]
   },
   {
     "original": "去领取>",
     "confidence": 0.9858140349388123,
-    "translated": "Go and collect it >"
+    "translated": "Go and collect it >",
+    "box": [
+      [
+        25.0,
+        533.0
+      ],
+      [
+        74.0,
+        533.0
+      ],
+      [
+        74.0,
+        547.0
+      ],
+      [
+        25.0,
+        547.0
+      ]
+    ]
   },
   {
     "original": "关闭且不再显示此弹窗",
     "confidence": 0.9999465942382812,
-    "translated": "Close this pop-up and prevent it from appearing again in the future."
+    "translated": "Close this pop-up and prevent it from appearing again in the future.",
+    "box": [
+      [
+        116.0,
+        563.0
+      ],
+      [
+        274.0,
+        567.0
+      ],
+      [
+        273.0,
+        588.0
+      ],
+      [
+        116.0,
+        583.0
+      ]
+    ]
   },
   {
     "original": "疫情服务",
     "confidence": 0.9998599290847778,
-    "translated": "Epidemic Services"
+    "translated": "Epidemic Services",
+    "box": [
+      [
+        7.0,
+        601.0
+      ],
+      [
+        86.0,
+        603.0
+      ],
+      [
+        85.0,
+        628.0
+      ],
+      [
+        6.0,
+        625.0
+      ]
+    ]
   },
   {
     "original": "实时资讯",
     "confidence": 0.9999563097953796,
-    "translated": "Real-time information"
+    "translated": "Real-time information",
+    "box": [
+      [
+        207.0,
+        607.0
+      ],
+      [
+        288.0,
+        607.0
+      ],
+      [
+        288.0,
+        630.0
+      ],
+      [
+        207.0,
+        630.0
+      ]
+    ]
   },
   {
     "original": "全国疫情",
     "confidence": 0.9999799728393555,
-    "translated": "The national epidemic situation"
+    "translated": "The national epidemic situation",
+    "box": [
+      [
+        13.0,
+        641.0
+      ],
+      [
+        75.0,
+        641.0
+      ],
+      [
+        75.0,
+        659.0
+      ],
+      [
+        13.0,
+        659.0
+      ]
+    ]
   },
   {
     "original": "2022.02.16",
     "confidence": 0.999994158744812,
-    "translated": "2022.02.16"
+    "translated": "2022.02.16",
+    "box": [
+      [
+        209.0,
+        633.0
+      ],
+      [
+        276.0,
+        633.0
+      ],
+      [
+        276.0,
+        647.0
+      ],
+      [
+        209.0,
+        647.0
+      ]
+    ]
   },
   {
     "original": "63",
     "confidence": 0.9999967217445374,
-    "translated": "63"
+    "translated": "63",
+    "box": [
+      [
+        148.0,
+        644.0
+      ],
+      [
+        172.0,
+        644.0
+      ],
+      [
+        172.0,
+        661.0
+      ],
+      [
+        148.0,
+        661.0
+      ]
+    ]
   },
   {
     "original": "现存确诊",
     "confidence": 0.9999366998672485,
-    "translated": "Currently confirmed cases"
+    "translated": "Currently existing confirmed cases",
+    "box": [
+      [
+        10.0,
+        667.0
+      ],
+      [
+        76.0,
+        667.0
+      ],
+      [
+        76.0,
+        688.0
+      ],
+      [
+        10.0,
+        688.0
+      ]
+    ]
   },
   {
     "original": "·满洲里发现5例阳性人",
     "confidence": 0.9915010929107666,
-    "translated": "·Five positive cases have been identified in Manzhouli."
+    "translated": "· Five positive cases have been identified in Manzhouli.",
+    "box": [
+      [
+        209.0,
+        660.0
+      ],
+      [
+        361.0,
+        660.0
+      ],
+      [
+        361.0,
+        679.0
+      ],
+      [
+        209.0,
+        679.0
+      ]
+    ]
   },
   {
     "original": "9998",
     "confidence": 0.9999953508377075,
-    "translated": "9998"
+    "translated": "9998",
+    "box": [
+      [
+        128.0,
+        670.0
+      ],
+      [
+        171.0,
+        670.0
+      ],
+      [
+        171.0,
+        688.0
+      ],
+      [
+        128.0,
+        688.0
+      ]
+    ]
   }
 ]
