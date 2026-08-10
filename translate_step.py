@@ -105,7 +105,14 @@ def translate_all(detected_texts: list[dict], target_language: str = "English") 
 
 if __name__ == "__main__":
     with open("detected_texts.json", "r", encoding="utf-8") as f:
-        detected = json.load(f)
+        data = json.load(f)
+
+    if isinstance(data, dict):
+        image_size = data.get("image_size")
+        detected = data.get("items", [])
+    else:
+        image_size = None  # old-format detected_texts.json (plain list)
+        detected = data
 
     print("\n--- АУДАРМА (Hunyuan-MT-7B) ---")
     translations = translate_all(detected, target_language="English")
@@ -113,8 +120,9 @@ if __name__ == "__main__":
         conf = item["confidence"] if item["confidence"] is not None else 0.0
         print(f"[{conf:.2f}] {item['original']}  ->  {item['translated']}")
 
+    output = {"image_size": image_size, "items": translations}
     with open("translations.json", "w", encoding="utf-8") as f:
-        json.dump(translations, f, ensure_ascii=False, indent=2)
+        json.dump(output, f, ensure_ascii=False, indent=2)
 
     print("\nSaved to translations.json")
     print("Now run: python overlay.py")
